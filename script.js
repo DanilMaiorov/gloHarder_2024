@@ -16,7 +16,7 @@ const res1 = nums.reduce(function (acc, curr) {
 multi(res1);
 
 /* 2 */
-let res2 = 1;
+const res2 = 1;
 
 for (let i = 0; i < nums.length; i++) {
   const el = nums[i];

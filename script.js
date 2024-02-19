@@ -30,32 +30,32 @@ multi(res2);
 
 // lesson_03 - 1
 
-/* const ruWeek = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+const ruWeek = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
 const enWeek = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
-let language = prompt("ru", "en"); */
+let language = prompt("ru", "en");
 
 /* 1 */
 
-/* if (language == "ru") {
+if (language == "ru") {
   console.log(ruWeek);
 } else {
   console.log(enWeek);
-}; */
+};
 
 /* 2 */
 
-/* switch (language) {
+switch (language) {
   case "ru":
     console.log(ruWeek);
     break;
   default:
     console.log(enWeek);
     break
-} */
+}
 
 /* 3 */
-/* let weeks = [];
+let weeks = [];
 
 const langs = {
   "ru": 0,
@@ -66,13 +66,28 @@ let changedLanguage = langs[language];
 
 weeks.push(ruWeek, enWeek);
 
-console.log(weeks[changedLanguage]); */
+console.log(weeks[changedLanguage]);
 
 // lesson_03 - 2
 
 let namePerson = prompt("Кто?", "Артем")
 
 namePerson === "Артем" ? console.log("директор") : namePerson === "Александр" ? console.log("преподаватель") : console.log("студент");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

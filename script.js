@@ -27,9 +27,8 @@ multi(res2);
 
 // lesson_03
 
-
-let ruWeek = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
-let enWeek = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const ruWeek = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+const enWeek = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
 let language = prompt("ru", "en");
 
@@ -42,8 +41,6 @@ if (language == "ru") {
 };
 
 /* 2 */
-
-console.log(language);
 
 switch (language) {
   case "ru":

@@ -1,4 +1,5 @@
 // lesson_02
+
 let num = 266219;
 
 let nums = num.toString().split('');
@@ -25,34 +26,36 @@ for (let i = 0; i < nums.length; i++) {
 
 multi(res2);
 
-// lesson_03
 
-const ruWeek = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+
+// lesson_03 - 1
+
+/* const ruWeek = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
 const enWeek = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
-let language = prompt("ru", "en");
+let language = prompt("ru", "en"); */
 
 /* 1 */
 
-if (language == "ru") {
+/* if (language == "ru") {
   console.log(ruWeek);
 } else {
   console.log(enWeek);
-};
+}; */
 
 /* 2 */
 
-switch (language) {
+/* switch (language) {
   case "ru":
     console.log(ruWeek);
     break;
   default:
     console.log(enWeek);
     break
-}
+} */
 
 /* 3 */
-let weeks = [];
+/* let weeks = [];
 
 const langs = {
   "ru": 0,
@@ -63,4 +66,72 @@ let changedLanguage = langs[language];
 
 weeks.push(ruWeek, enWeek);
 
-console.log(weeks[changedLanguage]);
+console.log(weeks[changedLanguage]); */
+
+// lesson_03 - 2
+
+let namePerson = prompt("Кто?", "Артем")
+
+namePerson === "Артем" ? console.log("директор") : namePerson === "Александр" ? console.log("преподаватель") : console.log("студент");
+
+
+
+
+
+
+/* let nummm = 50;
+
+let popitka = 10;
+
+const clean = function() {
+  let counter = prompt('asd', 1)
+  popitka--
+  const hands = function() {
+    console.log('руки');
+
+  };
+  const head = function() {
+    console.log('голова');
+  };
+  const legs = function() {
+    console.log('ноги');
+  };
+
+  const body = function() {
+    hands();
+    head();
+    legs();
+  };
+  body();
+  console.log(popitka);
+  if (popitka > 0) {
+    if (counter > 50) {
+
+      console.log('минус попитка 1');
+      clean()
+    } else if (counter < 50) {
+
+      console.log('минус попитка 2');
+      clean()
+    } else {
+      if (confirm('еще?')) {
+        console.log(popitka)
+        popitka = 10;
+        console.log(popitka)
+        clean();
+      }
+      return console.log('пака чистый');
+    }
+  } else {
+
+    if(confirm('еще?')) {
+      console.log(popitka)
+      popitka = 10;
+      console.log(popitka)
+      clean();
+    } else {
+      return console.log('пака грязный');
+    }
+  }
+};
+clean(); */

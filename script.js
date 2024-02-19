@@ -24,3 +24,22 @@ for (let i = 0; i < nums.length; i++) {
 }
 
 multi(res2);
+
+
+
+
+
+//lesson_04
+
+let newString = "Внутри одного тернарного оператора можно написать другой";
+
+const stringCheck = function(data) {
+  return typeof data === 'string' || data instanceof String
+};
+
+const trimmer = function(str) {
+  let trimStr = str.trim();
+  return stringCheck(str) ? console.log(trimStr.length <= 30 ? trimStr : trimStr.slice(0, 27) + "...") : console.log("Не строка")
+};
+
+trimmer(newString);

@@ -24,3 +24,46 @@ for (let i = 0; i < nums.length; i++) {
 }
 
 multi(res2);
+
+// lesson_03
+
+
+let ruWeek = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+let enWeek = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+
+let language = prompt("ru", "en");
+
+/* 1 */
+
+if (language == "ru") {
+  console.log(ruWeek);
+} else {
+  console.log(enWeek);
+};
+
+/* 2 */
+
+console.log(language);
+
+switch (language) {
+  case "ru":
+    console.log(ruWeek);
+    break;
+  default:
+    console.log(enWeek);
+    break
+}
+
+/* 3 */
+let weeks = [];
+
+const langs = {
+  "ru": 0,
+  "en": 1
+};
+
+let changedLanguage = langs[language];
+
+weeks.push(ruWeek, enWeek);
+
+console.log(weeks[changedLanguage]);

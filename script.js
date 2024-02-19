@@ -37,9 +37,9 @@ const stringCheck = function(data) {
   return typeof data === 'string' || data instanceof String
 };
 
-const trimmer = function(str) {
+const trimmer = function(str, call) {
   let trimStr = str.trim();
-  return stringCheck(str) ? console.log(trimStr.length <= 30 ? trimStr : trimStr.slice(0, 27) + "...") : console.log("Не строка")
+  return call(str) ? console.log(trimStr.length <= 30 ? trimStr : trimStr.slice(0, 27) + "...") : console.log("Не строка")
 };
 
-trimmer(newString);
+trimmer(newString, stringCheck);

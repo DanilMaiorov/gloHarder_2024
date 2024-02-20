@@ -1,26 +1,35 @@
-// lesson_02
-let num = 266219;
-
-let nums = num.toString().split('');
-
-const multi = (result) => {
-  result = (result ** 3).toString().slice(0,2)
-  console.log(result);
-}
+// lesson_05_1
+arr = ["1234", "2345", "3456", "4567", "5678", "6789", "2112"];
 
 /* 1 */
-const res1 = nums.reduce(function (acc, curr) {
-  return (acc * curr)
-})
-
-multi(res1);
+const twoFour = function() {
+  let newArr = [];
+  arr.forEach(item => {
+    if ([2, 4].includes(+item[0])) {
+      newArr.push(item);
+    }
+  });
+  return newArr
+};
+console.log(twoFour());
 
 /* 2 */
-let res2 = 1;
+const twoFour2 = function(a, b) {
+  let newArr2 = [];
+  arr.forEach(item => {
+    if (item.startsWith(a) ||item.startsWith(b)) {
+      newArr2.push(item);
+    }
+  });
+  return newArr2
+};
+console.log(twoFour2(2, 4));
 
-for (let i = 0; i < nums.length; i++) {
-  const el = nums[i];
-  res2 = res2 * +el
-}
+/* 3 */
+let newArr3 = arr.filter(item => {
+  if (item[0] === '2' || item[0] === '4')
+  return item
+});
+console.log(newArr3);
 
-multi(res2);
+

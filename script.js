@@ -1,3 +1,4 @@
+'use strict';
 // lesson_02
 
 let num = 266219;
@@ -86,59 +87,35 @@ trimmer(newString, stringCheck);
 
 
 
-/* let nummm = 50;
+//lesson_07
 
-let popitka = 10;
+let box = document.querySelector(".container");
 
-const clean = function() {
-  let counter = prompt('asd', 1)
-  popitka--
-  const hands = function() {
-    console.log('руки');
+let date = new Date();
+const currentDay = date.getDay();
 
-  };
-  const head = function() {
-    console.log('голова');
-  };
-  const legs = function() {
-    console.log('ноги');
-  };
+const week = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
 
-  const body = function() {
-    hands();
-    head();
-    legs();
-  };
-  body();
-  console.log(popitka);
-  if (popitka > 0) {
-    if (counter > nummm) {
-
-      console.log('минус попитка 1');
-      clean()
-    } else if (counter < nummm) {
-
-      console.log('минус попитка 2');
-      clean()
+const newWeek = week.map(function (item, index) {
+  if(item === "суббота" || item === "воскресенье") {
+    if (index == 6) {
+      return `<span style="font-style: italic;" data-index="${0}">${item}</span>`
     } else {
-      if (confirm('еще?')) {
-        console.log(popitka)
-        popitka = 10;
-        console.log(popitka)
-        clean();
-      }
-      return console.log('пака чистый');
+      return `<span style="font-style: italic;" data-index="${index + 1}">${item}</span>`
     }
   } else {
-
-    if(confirm('еще?')) {
-      console.log(popitka)
-      popitka = 10;
-      console.log(popitka)
-      clean();
-    } else {
-      return console.log('пака грязный');
-    }
+    return `<span data-index="${index + 1}">${item}</span>`
   }
-};
-clean(); */
+})
+
+newWeek.forEach(item => {
+  const oneDay = document.createElement('div');
+  oneDay.innerHTML = item;
+  box.append(oneDay)
+})
+
+let newArr = Array.from(document.querySelectorAll('span')).map(function(item) {
+  if (item.dataset.index == currentDay) {
+    item.style.fontWeight = "bold";
+  }
+})

@@ -112,11 +112,11 @@ const clean = function() {
   body();
   console.log(popitka);
   if (popitka > 0) {
-    if (counter > 50) {
+    if (counter > nummm) {
 
       console.log('минус попитка 1');
       clean()
-    } else if (counter < 50) {
+    } else if (counter < nummm) {
 
       console.log('минус попитка 2');
       clean()

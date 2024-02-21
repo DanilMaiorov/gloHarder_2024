@@ -13,7 +13,6 @@ const multi = (result) => {
 const res1 = nums.reduce(function (acc, curr) {
   return (acc * curr)
 })
-
 multi(res1);
 
 /* 2 */
@@ -23,10 +22,7 @@ for (let i = 0; i < nums.length; i++) {
   const el = nums[i];
   res2 = res2 * +el
 }
-
 multi(res2);
-
-
 
 // lesson_03 - 1
 
@@ -36,7 +32,6 @@ const enWeek = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 let language = prompt("ru", "en");
 
 /* 1 */
-
 if (language == "ru") {
   console.log(ruWeek);
 } else {
@@ -44,7 +39,6 @@ if (language == "ru") {
 };
 
 /* 2 */
-
 switch (language) {
   case "ru":
     console.log(ruWeek);
@@ -56,7 +50,6 @@ switch (language) {
 
 /* 3 */
 let weeks = [];
-
 const langs = {
   "ru": 0,
   "en": 1
@@ -75,21 +68,20 @@ let namePerson = prompt("Кто?", "Артем")
 namePerson === "Артем" ? console.log("директор") : namePerson === "Александр" ? console.log("преподаватель") : console.log("студент");
 
 
+//lesson_04
 
+let newString = "Внутри одного тернарного оператора можно написать другой";
 
+const stringCheck = function(data) {
+  return typeof data === 'string' || data instanceof String
+};
 
+const trimmer = function(str, call) {
+  let trimStr = str.trim();
+  return call(str) ? console.log(trimStr.length <= 30 ? trimStr : trimStr.slice(0, 27) + "...") : console.log("Не строка")
+};
 
-
-
-
-
-
-
-
-
-
-
-
+trimmer(newString, stringCheck);
 
 
 

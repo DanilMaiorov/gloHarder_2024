@@ -89,11 +89,13 @@ trimmer(newString, stringCheck);
 
 //lesson_07
 
+/* Хочу переделать его, div в div И в span не кайф */
+
 let box = document.querySelector(".container");
 
 let date = new Date();
 const currentDay = date.getDay();
-
+/* Хочу переделать его, div в div И в span не кайф */
 const week = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
 
 const newWeek = week.map(function (item, index) {

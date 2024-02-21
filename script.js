@@ -12,7 +12,7 @@ const filter = function(arg) {
 const validNums = function(value) {
   for (let i = 2; i <= value; i++) {
     if(filter(i)) {
-      console.log(i);
+      console.log(`Число ${i} - делители этого числа: 1 и ${i}`);
     }
   }
 };

@@ -141,7 +141,7 @@ const validNums = function(value) {
   }
 };
 
-validNums(100);
+// validNums(100);
 
 // lesson_06
 
@@ -204,7 +204,7 @@ const numberBot = function(num) {
   }
 
 };
-numberBot(randomizer());
+// numberBot(randomizer());
 
 
 //lesson_07
@@ -239,3 +239,5 @@ document.querySelectorAll('span').forEach(function(item) {
     item.style.fontWeight = "bold";
   }
 })
+
+

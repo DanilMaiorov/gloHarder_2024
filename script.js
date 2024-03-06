@@ -289,6 +289,9 @@ const renderDate = function(forms, task) {
   }
 };
 
+renderDate(wordForms, 1);
+renderDate(zeroAdd, 2);
+
 setInterval(() => {
   renderDate(wordForms, 1);
   renderDate(zeroAdd, 2);
